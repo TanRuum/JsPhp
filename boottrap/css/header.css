@@ -1,0 +1,148 @@
+#menu {
+    background: #FEFBF7;
+    overflow: hidden;
+}
+#menu .navbar-dark .navbar-brand{
+    color: #000 !important;
+    position: fixed;
+}
+#menu .bg-dark{
+    background: none !important;
+} 
+#menu .navbar-dark .navbar-nav .nav-link{
+    color: #000 !important;
+    position: relative !important;
+    /* transform: translateX(550px); */
+    font-size: 20px;
+}
+/* .btn-dark{
+    position: relative;
+    transform: translateX(750px) translateY(5px);
+    width: 150px;
+    height: 60px;
+}
+#menu .navbar-dark .navbar-nav .nav-link .item1 {
+    position: relative !important;
+    transform: translateX(50px);
+} */
+.navbar-dark .navbar-toggler{
+    background: #000;
+}
+#menu .banner {
+    overflow: hidden;
+}
+#menu .banner .title{
+    position: relative;
+    transform: translate(10%,50%);
+    font-size: 70px;
+    
+}
+#menu .banner .title h1
+{
+    font-size: 70px;
+}
+#menu .banner .banner-img{
+    background-position: center;
+    background-size: cover;
+
+
+}
+#menu .banner .title h1::before{
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 10px;
+    background: url(https://html.creativegigstf.com/jano/img/shape_06.svg);
+    transform: translateX(-50px) translateY(77px)
+}
+
+#menu .banner .banner-img-show .img1{
+    position: absolute;
+    top:17%;
+    left: 13%;
+   
+    animation:  show1  3s  linear infinite ;
+}
+#menu .banner .banner-img-show .img2{
+    position: absolute;
+    top:9%;
+    right:13%;
+    animation:  show1  3s  linear infinite ;
+}
+#menu .banner .banner-img-show .img3{
+    position: absolute;
+    top: 25%;
+    right: 2%;
+    animation:  show1  3s  linear infinite ;
+}
+#menu .banner .banner-img-show .img4{
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    top:35%;
+    right: 18%;
+    animation:  show1  3s  linear infinite ;
+}
+#menu .banner .banner-img-show .img5{
+    position: absolute;
+    width: 500px;
+    height: 15vh;
+    top: 28%;
+    left:0%;
+    animation:  show1  3s  linear infinite ;
+}
+@keyframes show1 {
+   0%{
+    transform: translateY(0);
+   }
+   50%{
+    transform: translateY( -10px);
+   }
+    
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+@media screen and (max-width:1200px){
+   .banner-img-show{
+        display: none;
+   }
+   #menu .banner .title h1{
+    font-size: 45px;
+   }
+   #menu .banner .title h1::before{
+    content: '';
+    position: absolute;
+    width:223px;
+    height: 10px;
+    background: url(https://html.creativegigstf.com/jano/img/shape_06.svg);
+    transform: translateX(-50px) translateY(50px)
+}
+} 
+@media screen and (max-width:992px){
+    #menu .banner .title h1{
+        font-size: 35px;
+       }
+       #menu .banner .title h1::before{
+            content: '';
+            position: absolute;
+            width: 185px;
+            height: 10px;
+            background: url(https://html.creativegigstf.com/jano/img/shape_06.svg);
+            transform: translateX(-50px) translateY(38px)
+}
+}
+@media screen and (max-width:576px){
+    #menu .banner .title h1{
+        font-size: 25px;
+       }
+       #menu .banner .title h1::before{
+        content: '';
+        position: absolute;
+        width: 170px;
+        height:8px;
+        background: url(https://html.creativegigstf.com/jano/img/shape_06.svg);
+        transform: translateX(-70px) translateY(25px)
+    }
+}

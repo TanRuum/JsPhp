@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+	<title>JS TAB</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			box-sizing: border-box;
+		}
+		body{
+			font-family: Rubik;
+			background-color: #f4f6fa;
+		}
+		.container{
+			margin: 50px auto 0;
+			width: 60%;
+			background-color: white;
+			border-radius: 0.5em;
+			box-shadow: 0 20px 25px -5px rgb(0 0 0 / 10%), 0 10px 10px -5px rgb(0 0 0 / 4%), 0 35px 2px -20px #e7e7ef;
+		}
+		.icon{
+			display: flex;
+		}
+		.icon .area{
+			width: 50%;
+			height: 150px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-flow: column;
+			background-color: #f5f7fa;
+			color: #8c90ab;
+			font-weight: 300;
+		}
+		.icon .area img{
+			width: 60%;
+			height: 80px;
+			margin-bottom: 10px;
+			filter: grayscale(85%) opacity(45%);
+			transition: all 0.5s;
+		}
+		.icon .area.areaStyle img{
+			filter: grayscale(0) opacity(1);
+		}
+		.contain{
+			position: relative;
+			padding: 60px;
+		}
+		.contain .box{
+			display: none;
+		}
+		.contain .flex{
+			display: flex;
+		}
+		.contain .flex .thumb{
+			width: 40%;
+		}
+		.contain .flex .thumb img{
+			width: 100%;
+		}
+		.contain .flex .content{
+			width: 60%;
+			padding-left: 30px;
+		}
+		.contain .flex .content h1{
+			font-size: 25px;
+			margin-bottom: 15px;
+			color: #5a68c4;
+			text-transform: uppercase;
+		}
+		.contain .flex .content p{
+			font-weight: 300;
+			margin-bottom: 30px;
+			color: #5e5e5e;
+		}
+		.contain .flex .content a{
+			background-color: rgb(90 104 196 / 10%);
+			color: #5a68c4;
+			text-transform: uppercase;
+			padding: 5px 20px;
+			border-radius: 20px;
+			text-decoration: unset;
+			transition: all 0.5s;
+		}
+		.contain .flex .content a:hover{
+			background-color: #5a68c4;
+			color: #fff;
+		}
+		.areaStyle{
+			background: #fff !important;
+			color: #5a68c4 !important;
+		}
+
+		.boxShow{
+			display: block !important;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="icon">
+			<div id="1" class="area areaStyle">
+				<img src="images/tab-1.png" alt="">
+				<span>Research</span>
+			</div>z
+			<div id="2" class="area">
+				<img src="images/tab-2.png" alt="">
+				<span>Planning</span>
+			</div>
+			<div id="3" class="area">
+				<img src="images/tab-3.png" alt="">
+				<span>Production</span>
+			</div>
+			<div id="4" class="area">
+				<img src="images/tab-4.png" alt="">
+				<span>Testing</span>
+			</div>
+			<div id="5" class="area">
+				<img src="images/tab-5.png" alt="">
+				<span>Result</span>
+			</div>
+		</div>
+		<div class="contain">
+			<div id="box1" class="box boxShow">
+				<div class="flex">
+					<div class="thumb">
+						<img src="images/tab-1.png" alt="">
+					</div>
+					<div class="content">
+						<h1>Research & Analytics</h1>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam consequuntur corporis reprehenderit repudiandae eveniet animi recusandae! Architecto, sequi explicabo, dignissimos id minima perspiciatis accusamus sapiente dolores voluptas magnam suscipit. Quo!</p>
+						<a href="">Details</a>
+					</div>
+				</div>
+			</div>
+			<div id="box2" class="box">
+				<div class="flex">
+					<div class="thumb">
+						<img src="images/tab-2.png" alt="">
+					</div>
+					<div class="content">
+						<h1>Planning</h1>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam consequuntur corporis reprehenderit repudiandae eveniet animi recusandae! Architecto, sequi explicabo, dignissimos id minima perspiciatis accusamus sapiente dolores voluptas magnam suscipit. Quo!</p>
+						<a href="">Details</a>
+					</div>
+				</div>
+			</div>
+			<div id="box3" class="box">
+				<div class="flex">
+					<div class="thumb">
+						<img src="images/tab-3.png" alt="">
+					</div>
+					<div class="content">
+						<h1>Production</h1>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam consequuntur corporis reprehenderit repudiandae eveniet animi recusandae! Architecto, sequi explicabo, dignissimos id minima perspiciatis accusamus sapiente dolores voluptas magnam suscipit. Quo!</p>
+						<a href="">Details</a>
+					</div>
+				</div>
+			</div>
+			<div id="box4" class="box">
+				<div class="flex">
+					<div class="thumb">
+						<img src="images/tab-4.png" alt="">
+					</div>
+					<div class="content">
+						<h1>Testing</h1>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam consequuntur corporis reprehenderit repudiandae eveniet animi recusandae! Architecto, sequi explicabo, dignissimos id minima perspiciatis accusamus sapiente dolores voluptas magnam suscipit. Quo!</p>
+						<a href="">Details</a>
+					</div>
+				</div>
+			</div>
+			<div id="box5" class="box">
+				<div class="flex">
+					<div class="thumb">
+						<img src="images/tab-5.png" alt="">
+					</div>
+					<div class="content">
+						<h1>Result</h1>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam consequuntur corporis reprehenderit repudiandae eveniet animi recusandae! Architecto, sequi explicabo, dignissimos id minima perspiciatis accusamus sapiente dolores voluptas magnam suscipit. Quo!</p>
+						<a href="">Details</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		let area= document.getElementsByClassName('area');
+		let box= document.getElementsByClassName('box');
+		for(let i=0;i<area.length;i++){
+			area[i].addEventListener('mouseover',show);
+
+		}
+		function show() {
+			for(let i=0;i<area.length;i++){
+			area[i].classList.remove('areaStyle'); // Toàn bộ class ('areaStyle sẽ hủy bỏ')
+		}
+			this.classList.add('areaStyle');	// Sẽ thêm class ('areaStyle')
+			for(let i=0;i<box.length;i++){		// khi
+			box[i].classList.remove('boxShow'); //
+		}
+			box[this.id-1].classList.add('boxShow');
+		}
+	</script>
+</body>
+</html>

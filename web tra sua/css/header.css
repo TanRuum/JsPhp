@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header .navbar{
+    background: rgba(27, 39, 61, .95) !important;
+  
+}
+header .navbar  ul li a{
+    color: #fff !important;
+}
+.banner h1{
+    font-size: 120px;
+}
+.time{
+    margin: 60px;
+}
+header .navbar .navbar-toggler{
+    background: #6f42c1;
+    transition: .5s;
+}
+header .navbar .navbar-toggler:hover{
+    border-radius: 30%;
+}
+header .banner{
+    position: relative;
+    background-image: url(../imgs/images/banner.gif);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    
+}
+header .banner .time{
+    position: relative;
+    margin-right: 20px;
+    transform: translateY(200px);
+}
